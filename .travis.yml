@@ -6,3 +6,4 @@ matrix:
   fast_finish: true
   include:
     - script: docker run --rm -ti centos:7 /bin/sh -c 'yum install -y httpd'
+    - script: docker run --privileged --rm -ti centos:7 /bin/sh -c 'yum install -y httpd'
